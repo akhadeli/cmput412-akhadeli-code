@@ -32,7 +32,7 @@ CS student @ University of Alberta, Unemployed @ Home
 
 ### Interests
 
-- Building Stuff
+- Building stuff out of boredom
 
 ### Contact
 
