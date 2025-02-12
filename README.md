@@ -36,4 +36,4 @@ CS student @ University of Alberta, Unemployed @ Home
 
 ### Contact
 
-![My linkedIn](https://www.linkedin.com/in/ryan-kenneth-rom-5ba290292/)
+[My linkedIn](https://www.linkedin.com/in/ryan-kenneth-rom-5ba290292/)
