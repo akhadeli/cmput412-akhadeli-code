@@ -1,3 +1,7 @@
+# About
+This repository contains ros nodes that can run on Duckiebots. For more information on Duckiebots, visit https://docs.duckietown.com/daffy/.
+
+###
 # Collaborators
 
 ## Abdullah Khadeli
