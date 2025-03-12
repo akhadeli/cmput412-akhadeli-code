@@ -1,47 +1,61 @@
-# Template: template-ros
+# CMPUT 412/503 Exercise 3
 
-This template provides a boilerplate repository
-for developing ROS-based software in Duckietown.
+## Abdullah Khadeli and Ryan Rom
 
-**NOTE:** If you want to develop software that does not use
-ROS, check out [this template](https://github.com/duckietown/template-basic).
+## Overview
 
+This project implements various ROS nodes for controlling a Duckiebot:
 
-## How to use it
+- Image undistortion
+- HSV Detection
+- Color based navigation (behavioral execution)
+- PID Controller implementation
+- Lane following
 
-### 1. Fork this repository
+## Package Structure
 
-Use the fork button in the top-right corner of the github page to fork this template repository.
+The main ROS package `my_package` contains the following key components:
 
+- `src/undistort.py`: Implementation of the undistortion node
+- `src/behavioral_execution.py`: Implementation of the behavioral execution node
+- `src/color_detection.py`: Implementation of the color detection node
+- `src/color_contours.py`: Implementation of the color contours node
+- `src/pid_controller.py`: Implementation of the PID controller node, also used for the lane following demo
 
-### 2. Create a new repository
+## Dependencies
 
-Create a new repository on github.com while
-specifying the newly forked template repository as
-a template for your new repository.
+The project requires:
 
+- ROS 1/2
+- Duckietown
+- Python 3
 
-### 3. Define dependencies
+## Usage
 
-List the dependencies in the files `dependencies-apt.txt` and
-`dependencies-py3.txt` (apt packages and pip packages respectively).
+The project uses the standard Duckietown development container. To run:
 
+1. Build the container:
 
-### 4. Place your code
+```bash
+dts devel build -f
+```
 
-Place your code in the directory `/packages/` of
-your new repository.
+2. Run the container:
 
+```bash
+dts devel run -R ROBOT_NAME -l LAUNCH_FILE [-X]
+```
 
-### 5. Setup launchers
+Launch files are located in the `/launchers` directory.
 
-The directory `/launchers` can contain as many launchers (launching scripts)
-as you want. A default launcher called `default.sh` must always be present.
+- `undistort.sh`: Launches the undistortion node
+- `behavioral-execution.sh`: Launches the behavioral execution node
+- `color-detection.sh`: Launches the color detection node
+- `color-contours.sh`: Launches the color contours node
+- `pid-controller.sh`: Launches the PID controller node
+- `lane-following.sh`: Launches the lane following demo
 
-If you create an executable script (i.e., a file with a valid shebang statement)
-a launcher will be created for it. For example, the script file 
-`/launchers/my-launcher.sh` will be available inside the Docker image as the binary
-`dt-launcher-my-launcher`.
+## Maintainers
 
-When launching a new container, you can simply provide `dt-launcher-my-launcher` as
-command.
+- Abdullah Khadeli (akhadeli@ualberta.ca)
+- Ryan Rom (rom@ualberta.ca)
