@@ -1,7 +1,7 @@
 # parameters
-ARG REPO_NAME="assignment3"
-ARG DESCRIPTION="assignment 3 solution"
-ARG MAINTAINER="Dikshant (ddikshan@ualberta.ca)"
+ARG REPO_NAME="cmput412-dtros"
+ARG DESCRIPTION="DTROS project Ex2"
+ARG MAINTAINER="Abdullah Khadeli akhadeli@ualberta.ca"
 # pick an icon from: https://fontawesome.com/v4.7.0/icons/
 ARG ICON="cube"
 
