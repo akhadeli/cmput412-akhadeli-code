@@ -63,7 +63,6 @@ Launch files are located in the `/launchers` directory.
 - `pd-crosswalk.sh`: Launches the crosswalk detection node
 - `pid-controller.sh`: Launches the PID controller node
 - `vehicle-avoidance.sh`: Launches the vehicle avoidance node
-- `vehicle-avoidance-queue.sh`: Launches the vehicle avoidance queued execution node
 
 ## Maintainers
 
