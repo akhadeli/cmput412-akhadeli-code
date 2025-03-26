@@ -2,6 +2,12 @@
 
 ## Abdullah Khadeli and Ryan Rom
 
+### Source Repo
+
+[Here](https://github.com/ryankennethrom/cmput412-dtros)
+
+NOTE: Some commits in the source repo are pushed under another student's name since that student put their name in the git global config in the lab machines. Unfortunately, we were not aware that they set their name in the global config. All code in the source repo is our own, and commited by ourselves through the lab machines.
+
 ## Overview
 
 This project implements various ROS nodes for controlling a Duckiebot:
